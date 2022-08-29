@@ -4,7 +4,8 @@ $gray: hsl(212, 23%, 69%);
 $ligthGray: hsl(210, 46%, 95%);
 
 body {
-    border: 1px solid yellow;
+    box-sizing: border-box;
+    margin: 0;
     background-color: $dark;
     display: flex;
     justify-content: center;
