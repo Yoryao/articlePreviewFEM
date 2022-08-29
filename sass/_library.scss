@@ -1,0 +1,16 @@
+$dark: hsl(217, 19%, 35%);
+$desaturatedDark: hsl(214, 17%, 51%);
+$gray: hsl(212, 23%, 69%);
+$ligthGray: hsl(210, 46%, 95%);
+
+body {
+    border: 1px solid yellow;
+    background-color: $dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+

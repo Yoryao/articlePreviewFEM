@@ -1,0 +1,72 @@
+@use "library";
+@use "mixins";
+
+* {
+    border: 1px solid red;
+}
+
+.container {
+    box-sizing:border-box;
+    @include mixins.makeRow;
+    align-content: center;
+    align-items: center;
+    width: 731px;
+    height: 281px;
+    margin: auto;
+    border-radius: 10px;
+
+    .imageContainer {
+        width: 286px;
+        height: 281px;
+    
+        img {
+            width: 286px;
+        height: 281px;
+        }
+    }
+
+    .infoContainer {
+    @include mixins.makeColumn;
+    width: 455px;
+    height: 281px;
+    padding: 40px;
+
+    title {
+        padding: 10px;
+
+    }
+
+    #description {
+        padding: 10px;
+
+    }
+
+    #profile {
+        #avatarName {
+            display: flex;
+            justify-content: flex-start;
+        
+            #avatar {
+            padding-right: 10px;
+            }
+            #avatarImage {
+                width: 50px;
+                border-radius: 100%;
+            }
+
+        }
+        @include mixins.makeRow;
+        padding: 10px;
+        justify-content: space-between;
+
+        #name {
+            align-self: left;
+        }
+    
+        #shareIcon {
+            width: 50px;
+            border-radius: 100%;
+        }
+    }
+}
+}

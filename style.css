@@ -1,0 +1,71 @@
+body {
+  border: 1px solid yellow;
+  background-color: hsl(217deg, 19%, 35%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+
+* {
+  border: 1px solid red;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  width: 731px;
+  height: 281px;
+  margin: auto;
+  border-radius: 10px;
+}
+.container .imageContainer {
+  width: 286px;
+  height: 281px;
+}
+.container .imageContainer img {
+  width: 286px;
+  height: 281px;
+}
+.container .infoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 455px;
+  height: 281px;
+  padding: 40px;
+}
+.container .infoContainer title {
+  padding: 10px;
+}
+.container .infoContainer #description {
+  padding: 10px;
+}
+.container .infoContainer #profile {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+}
+.container .infoContainer #profile #avatarName {
+  display: flex;
+  justify-content: flex-start;
+}
+.container .infoContainer #profile #avatarName #avatar {
+  padding-right: 10px;
+}
+.container .infoContainer #profile #avatarName #avatarImage {
+  width: 50px;
+  border-radius: 100%;
+}
+.container .infoContainer #profile #name {
+  align-self: left;
+}
+.container .infoContainer #profile #shareIcon {
+  width: 50px;
+  border-radius: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

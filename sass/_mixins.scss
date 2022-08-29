@@ -1,0 +1,9 @@
+@mixin makeRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin makeColumn {
+    display: flex;
+    flex-direction: column;
+}
