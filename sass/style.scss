@@ -2,77 +2,93 @@
 @use "mixins";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
- 
-    @include mixins.makeRow;
-    align-content: center;
-    align-items: center;
-    width: 731px;
-    height: 281px;
-    margin: auto;
-    border-radius: 50px;
-    border: 3px solid;
+  @include mixins.makeRow;
+  align-content: center;
+  align-items: center;
+  width: 731px;
+  height: 281px;
+  margin: auto;
+  border-radius: 15px;
+  border: 1px solid red;
 
-    .imageContainer {
-        width: 286px;
-        height: 281px;
-        img {
-            height: 281px;
-            }
+  .imageContainer {
+    width: 286px;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    img {
+      height: 100%;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
     }
+  }
 
-    .infoContainer {
-
+  .infoContainer {
     @include mixins.makeColumn;
     width: 455px;
-    height: 281px;
-    padding: 20px;
+    height: 100%;
+    padding: 40px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     background-color: library.$ligthGray;
 
     #title {
-        padding: 10px;
-        font-weight: 700;
-        font-size: 130%;
+      padding: 0px;
+      font-weight: 700;
+      font-size: 20px;
     }
 
     #description {
-        padding: 10px;
-        font-size: 90%;
-
+      padding: 10px 0px 0px 0px;
+      font-size: 13px;
     }
 
     #profile {
-        @include mixins.makeRow;
-        justify-content: space-between;
+      @include mixins.makeRow;
+      padding-top: 20px;
+      justify-content: space-between;
+      align-items: center;
+      vertical-align: baseline;
+
+      #avatarName {
+        display: flex;
+        justify-content: flex-start;
         align-items: center;
+        font-size: 12px;
 
-        #avatarName {
-            display: flex;
-            justify-content: flex-start;
-            
-        
-            #avatar {
-            padding-right: 10px;
-            }
-                #avatarImage {
-                    width: 50px;
-                    border-radius: 100%;
-                }
+        #avatar {
+          padding-right: 10px;
         }
+        #avatarImage {
+          width: 40px;
+          border-radius: 100%;
+        }
+      }
 
-        #name {
-            align-self: left;
-            font-weight: bold;
+      #name {
+        align-self: left;
+        font-weight: bold;
+      }
+
+      #shareBtn {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: library.$gray;
+        border: none;
+
+        &:hover {
+          cursor: pointer;
         }
-    
-        #shareIcon {
-            width: 50px;
-            padding: 5px;
-            // border-radius: 100%;
-        }
+      }
+
+      #shareIcon {
+        width: 20px;
+      }
     }
-}
+  }
 }

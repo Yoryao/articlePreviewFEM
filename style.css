@@ -1,11 +1,13 @@
 body {
   box-sizing: border-box;
+  height: 100vh;
   margin: 0;
   background-color: hsl(217deg, 19%, 35%);
   display: flex;
   justify-content: center;
-  align-items: center;
   font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  border: 1px solid yellow;
 }
 
 * {
@@ -20,57 +22,76 @@ body {
   width: 731px;
   height: 281px;
   margin: auto;
-  border-radius: 50px;
-  border: 3px solid;
+  border-radius: 15px;
+  border: 1px solid red;
 }
 .container .imageContainer {
   width: 286px;
-  height: 281px;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .container .imageContainer img {
-  height: 281px;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .container .infoContainer {
   display: flex;
   flex-direction: column;
   width: 455px;
-  height: 281px;
-  padding: 20px;
+  height: 100%;
+  padding: 40px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   background-color: hsl(210deg, 46%, 95%);
 }
 .container .infoContainer #title {
-  padding: 10px;
+  padding: 0px;
   font-weight: 700;
-  font-size: 130%;
+  font-size: 20px;
 }
 .container .infoContainer #description {
-  padding: 10px;
-  font-size: 90%;
+  padding: 10px 0px 0px 0px;
+  font-size: 13px;
 }
 .container .infoContainer #profile {
   display: flex;
   flex-direction: row;
+  padding-top: 20px;
   justify-content: space-between;
   align-items: center;
+  vertical-align: baseline;
 }
 .container .infoContainer #profile #avatarName {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
 }
 .container .infoContainer #profile #avatarName #avatar {
   padding-right: 10px;
 }
 .container .infoContainer #profile #avatarName #avatarImage {
-  width: 50px;
+  width: 40px;
   border-radius: 100%;
 }
 .container .infoContainer #profile #name {
   align-self: left;
   font-weight: bold;
 }
+.container .infoContainer #profile #shareBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: hsl(212deg, 23%, 69%);
+  border: none;
+}
+.container .infoContainer #profile #shareBtn:hover {
+  cursor: pointer;
+}
 .container .infoContainer #profile #shareIcon {
-  width: 50px;
-  padding: 5px;
+  width: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
