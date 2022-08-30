@@ -116,4 +116,33 @@ body {
   display: none;
 }
 
+@media (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 668px;
+    margin: auto;
+    border-radius: 15px;
+  }
+  .container .imageContainer {
+    width: 375px;
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  .container .imageContainer img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  .container .infoContainer {
+    width: 327px;
+    height: 512px;
+    padding: 40px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
