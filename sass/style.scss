@@ -120,33 +120,5 @@
     display: none;
 }
 
-@media (max-width: 375px) {
-
-.container {
-  @include mixins.makeColumn;
-  width: 375px;
-  height: 668px;
-  margin: auto;
-  border-radius: 15px;
-
-  .imageContainer {
-    width: 375px;
-    height: 200px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    img {
-      border-top-right-radius: 15px;
-      border-top-left-radius: 15px;
-    }
-  }
-
-  .infoContainer {
-    width: 327px;
-    height: 512px;
-    padding: 40px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: white;
-  }
-}
+@media (max-width: 376px) {
 }
