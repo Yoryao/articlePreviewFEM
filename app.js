@@ -3,11 +3,12 @@ console.log("app Working")
 
 
 
-let iconContainer = document.getElementById("iconContainer");
-console.log(iconContainer)
 
 
 function showShareIcons() {
+    let icons = document.getElementById("icons");
     console.log("mostrando redes")
+    console.log({icons})
+    icons.classList.toggle("hidden")
 }
 

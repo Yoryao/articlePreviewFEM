@@ -92,8 +92,9 @@ body {
 .container .infoContainer #profile #shareIcon {
   width: 20px;
 }
-.container .infoContainer #iconContainer {
-  border: 1px solid yellow;
+
+.iconContainer {
+  border: 3px solid yellow;
   background-color: hsl(217deg, 19%, 35%);
   height: 50px;
   width: 200px;
@@ -106,9 +107,13 @@ body {
   vertical-align: center;
   align-items: center;
 }
-.container .infoContainer #iconContainer img {
+.iconContainer img {
   width: 20px;
   height: 20px;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
