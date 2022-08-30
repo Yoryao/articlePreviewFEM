@@ -98,13 +98,14 @@ body {
   height: 50px;
   width: 200px;
   position: absolute;
-  right: 303px;
-  top: 315px;
+  top: 310px;
+  left: 888px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   vertical-align: center;
   align-items: center;
+  border-radius: 5px;
 }
 .iconContainer img {
   width: 20px;
