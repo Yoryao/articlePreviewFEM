@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   height: 100vh;
   margin: 0;
-  background-color: hsl(217deg, 19%, 35%);
+  background-color: hsl(210deg, 46%, 95%);
   display: flex;
   justify-content: center;
   font-family: "Manrope", sans-serif;
@@ -91,6 +91,24 @@ body {
 }
 .container .infoContainer #profile #shareIcon {
   width: 20px;
+}
+.container .infoContainer #iconContainer {
+  border: 1px solid yellow;
+  background-color: hsl(217deg, 19%, 35%);
+  height: 50px;
+  width: 200px;
+  position: absolute;
+  right: 303px;
+  top: 315px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  vertical-align: center;
+  align-items: center;
+}
+.container .infoContainer #iconContainer img {
+  width: 20px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

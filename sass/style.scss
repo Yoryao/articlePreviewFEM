@@ -89,6 +89,39 @@
       #shareIcon {
         width: 20px;
       }
+
     }
+
+    #iconContainer {
+      border: 1px solid yellow;
+      background-color: library.$dark;
+      height: 50px;
+      width: 200px;
+      position:absolute;
+      right: 303px;
+      top: 315px;
+      @include mixins.makeRow;
+      justify-content: space-evenly;
+      vertical-align: center;
+      align-items: center;
+    
+        img {
+          width: 20px;
+          height: 20px;
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+
+
+
   }
 }
