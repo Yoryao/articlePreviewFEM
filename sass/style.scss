@@ -30,7 +30,7 @@
     @include mixins.makeColumn;
     width: 455px;
     height: 100%;
-    padding: 40px;
+    padding: 25px 40px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     // background-color: library.$ligthGray;
@@ -102,13 +102,15 @@
   width: 200px;
   position: absolute;
   right: 303px;
-  top: 315px;
+  top: 290px;
   @include mixins.makeRow;
   justify-content: space-evenly;
   vertical-align: center;
   align-items: center;
 
-  
+  .hidden {
+    display: none;
+}
   img {
     width: 20px;
     height: 20px;
@@ -116,9 +118,7 @@
   
 }
 
-.hidden {
-    display: none;
-}
+
 
 @media (max-width: 376px) {
 }

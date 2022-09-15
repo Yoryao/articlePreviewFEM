@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   width: 455px;
   height: 100%;
-  padding: 24px 40px;
+  padding: 25px 40px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: white;
@@ -94,115 +94,25 @@ body {
 }
 
 .iconContainer {
+  border: 3px solid yellow;
   background-color: hsl(217deg, 19%, 35%);
   height: 50px;
   width: 200px;
   position: absolute;
-  top: 470px;
-  left: 1160px;
+  right: 303px;
+  top: 290px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   vertical-align: center;
   align-items: center;
-  border-radius: 5px;
+}
+.iconContainer .hidden {
+  display: none;
 }
 .iconContainer img {
   width: 20px;
   height: 20px;
-}
-
-.hidden {
-  display: none;
-}
-
-#shareText{
-  color: aliceblue;
-}
-
-@media (max-width: 376px) {
-
-  body {
-    height: auto;
-    width: 100vw;
-   }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: 375px;
-    height: 668px;
-    margin: auto;
-    border-radius: 15px;
-  }
-  .container .imageContainer {
-    width: 327px;
-    height: 200px;
-    border-bottom-left-radius:0px ;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    
-  }
-  .container .imageContainer img {
-    width: 327px;
-    height: 200px;
-    margin-top: 74px;
-    border-radius: 0px ;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-  }
-
-  .container .infoContainer #title {
-    font-size: 15px;
-}
-
-  .container .infoContainer {
-    width: 327px;
-    height: auto;
-    margin: auto;
-    margin-top: 74px;
-
-
-    border-radius: 0;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-
-  .container .infoContainer #description {
-    padding: 10px 0px 0px 0px;
-    font-size: 12.5px;
-}
-
-.iconContainer {
-  background-color: hsl(217deg, 19%, 35%);
-  height: 100px;
-  width: 327px;
-  display: flex;
-  position: absolute;
-  top: 486px;
-  left: 24px;
-  flex-direction: row;
-  justify-content: space-evenly;
-  vertical-align: center;
-  align-items: center;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-.iconContainer img {
-  width: 20px;
-  height: 20px;
-}
-
-.hidden {
-  display: none;
-}
-
-
-
 }
 
 /*# sourceMappingURL=style.css.map */
